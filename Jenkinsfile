@@ -16,7 +16,7 @@ pipeline {
 
         stage('Run Docker Image') {
             steps {
-                sh 'docker run -d -p 8088:8080 --name -go_web_container go-web-app'
+                sh 'docker run -d -p 8088:8080 --name go_web_container go-web-app'
             }
         }
     }
